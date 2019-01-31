@@ -1,0 +1,10 @@
+<template name="msgItem">
+<view class='views-style'>
+<navigator url="../detail/index?src={{ensrc}}&index={{enindex}}&name={{enname}}&time={{entime}}" hover-class="navigator-hover">
+<image class="image-style" src="{{src}}"></image>
+</navigator>
+<text class='texts-style'>编号:\t{{index}}号</text>
+<text class='texts-style'>昵称:\t{{name}}</text>
+<text class='texts-style'>时间:\t{{time}}</text>
+</view>
+</template>

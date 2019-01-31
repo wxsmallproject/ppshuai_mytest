@@ -1,0 +1,11 @@
+/* pages/detail/index.wxss */
+.views-style {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-style {
+  width: 100%;
+  height: 100%;
+  margin: 20rpx;
+}

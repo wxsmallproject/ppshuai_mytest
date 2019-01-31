@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/apps/index",
+    "pages/logs/logs",
+    "pages/detail/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#0a0",
+    "navigationBarTitleText": "MiniProgram",
+    "navigationBarTextStyle":"black"
+  }
+}

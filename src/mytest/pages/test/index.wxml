@@ -1,0 +1,33 @@
+<text>新页面测试</text>
+<view wx:if="{flag > 5}">
+<image class='userinfo-avatar' src='https://tse2-mm.cn.bing.net/th?id=OIP.eN-5D1faBJ3dwVgjaTkVFAHaHa&w=218&h=210&c=7&o=5&pid=1.7'></image>
+<image class='userinfo-avatar' src='https://tse4-mm.cn.bing.net/th?id=OIP.PUx6oPQNVZNHsZvF5KtmegHaF7&w=268&h=211&c=7&o=5&pid=1.7'></image>
+</view>
+<block wx:elif="{flag > 3}">
+<image class='userinfo-avatar' src='https://tse1-mm.cn.bing.net/th?id=OIP.tfqigZYt7YjrRhsnEfn3pQHaHa&w=190&h=189&c=7&o=5&pid=1.7'></image>
+<image class='userinfo-avatar' src='https://tse2-mm.cn.bing.net/th?id=OIP.bWbFo_If80tApL4vyiDFugHaKh&w=149&h=207&c=7&o=5&pid=1.7'></image>
+</block>
+<view wx:else>
+<image class='userinfo-avatar' src='https://tse2-mm.cn.bing.net/th?id=OIP.eN-5D1faBJ3dwVgjaTkVFAHaHa&w=218&h=210&c=7&o=5&pid=1.7'></image>
+</view>
+<view wx:for="{{textlist}}">
+{{index}}:{{item.msg}}
+</view>
+<view wx:for="{{textlist}}" wx:for-index="idx" wx:for-item="itemName">
+  {{idx}}: {{itemName.msg}}
+</view>
+<block wx:for="{{textlist}}">
+  <view> {{index}}: </view>
+  <view> {{item.msg}} </view>
+</block>
+<switch wx:for="{{objectList}}" wx:key="unique" wx:for-item="itemName">{{itemName.id}}</switch>
+<button bindtap="switch">Switch</button>
+<button bindtap="addToFront">Add to the front</button>
+<switch wx:for="{{numberList}}" wx:key="*this" wx:for-item="itemName">{{itemName}}</switch>
+<button bindtap="addNumberToFront">Add to the front</button>
+<text>\n\n系统\t时间: {{time}}</text>
+<text space="ensp">\n\n（空格是中文字符一半大小）系统时间: {{time}}</text>
+<text space="emsp">\n\n（空格是中文字符大小）系统时间: {{time}}</text>
+<text space="nbsp">\n\n（空格根据字体设置）系统时间: {{time}}</text>
+<text>\n\n{{ a === 10? "变量 a 等于10": "变量 a 不等于10"}}</text>
+<text>\n{{"字符串+"+str}}+{{a+b}}+{{c}}+d+{{infolist}}</text>

@@ -1,0 +1,13 @@
+/* pages/apps/index.wxss */
+.views-style {
+  display: inline-flex;
+  flex-direction: column;
+}
+.image-style {
+  width: 300rpx;
+  height: 300rpx;
+  margin: 20rpx;
+}
+.texts-style {
+  margin-left: 20rpx;
+}

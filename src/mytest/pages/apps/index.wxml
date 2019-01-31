@@ -1,0 +1,6 @@
+
+<import src="msgItem.wxml"/>
+<!--<template is="msgItem" data="{{...msgItem}}"/>-->
+<block wx:for="{{datalist}}" wx:key="index" wx:for-item="itemName">
+  <template is="msgItem" data="{{...itemName}}"/>
+</block>

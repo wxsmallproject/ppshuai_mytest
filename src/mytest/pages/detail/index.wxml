@@ -1,0 +1,10 @@
+<!--
+<navigator url='../apps/index'>返回上一页</navigator>
+<text>跳转成功</text>
+-->
+<view class='views-style'>
+<image src="{{data_item.src}}"></image>
+<text class='texts-style'>编号:\t{{data_item.index}}号</text>
+<text class='texts-style'>昵称:\t{{data_item.name}}</text>
+<text class='texts-style'>时间:\t{{data_item.time}}</text>
+</view>
